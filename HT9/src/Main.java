@@ -2,7 +2,31 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         System.out.println("---test1---");
-        f1("advvda");
+        System.out.println(f1("advvda"));
+        System.out.println("---test2---");
+        System.out.println(f2("edavuvda"));
+        System.out.println("---test3---");
+        System.out.println(f3("adv da"));
+        System.out.println("---test4---");
+        System.out.println(f4("advva"));
+        System.out.println("---test5---");
+        System.out.println(f5("adnvda"));
+        System.out.println("---test6---");
+        System.out.println(f6( "Hi",3));
+        System.out.println("---test7---");
+        System.out.println(f7("Hello",'h','e'));
+        System.out.println("---test8---");
+        System.out.println(f8("Hello World !" ));
+        System.out.println("---test9---");
+        System.out.println(f9("World!" ));
+        System.out.println("---test10---");
+        System.out.println(f10("Hello123" ));
+        System.out.println("---test11---");
+        System.out.println(f11("listen", "silent" ));
+        System.out.println("---test12---");
+        System.out.println(f12("abc" ));
+        System.out.println("---test13---");
+        System.out.println(f13("abcdef", "zbcdf" ));
     }
     public static boolean f1(String s){
         for (int i = 0; i < (s.length()-1)/2; i++) {
@@ -59,7 +83,7 @@ public class Main {
     public static String f8(String s){
     StringBuilder s1= new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
-           if(Character.compare(s.charAt(i),' ')==0)
+           if(Character.compare(s.charAt(i),' ')!=0)
             s1.append(s.charAt( i));
         }
         return s1.toString();
